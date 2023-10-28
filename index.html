@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Random Walk</title>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,6 +11,7 @@
         h1 {
             text-align: center;
             color: #333;
+            font-size: 50px; /* 修改标题字体大小为50像素 */
         }
 
         .container {
@@ -26,7 +28,7 @@
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 40px; /* 修改按钮的字体大小为40像素 */
             cursor: pointer;
             transition: background-color 0.3s;
         }
@@ -35,22 +37,22 @@
             background-color: #45a049;
         }
 
+        .container p,
+        button {
+            font-size: 40px; /* 修改文本和按钮的字体大小为40像素 */
+        }
+
         #output {
             white-space: pre-line;
             font-family: Consolas, monospace;
-            font-size: 18px; /* 修改输出文本的字体大小为18像素 */
+            font-size: 40px; /* 修改输出文本的字体大小为40像素 */
         }
     </style>
-    <div class="container">
-        <h1>Random Walk</h1>
-        <p>If you don't know where to go on the weekend, please click the "Run" button, it will give you the answer.</p>
-        <button onclick="runCode()">Run</button>
-        <pre id="output"></pre>
-    </div>
 </head>
 <body>
     <div class="container">
         <h1>Random Walk</h1>
+        <p>If you don't know where to go on the weekend, please click the "Run" button, it will give you the answer.</p>
         <button onclick="runCode()">Run</button>
         <pre id="output"></pre>
     </div>
