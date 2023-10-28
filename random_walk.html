@@ -41,6 +41,12 @@
             font-size: 18px; /* 修改输出文本的字体大小为18像素 */
         }
     </style>
+    <div class="container">
+        <h1>Random Walk</h1>
+        <p>If you don't know where to go on the weekend, please click the "Run" button, it will give you the answer.</p>
+        <button onclick="runCode()">Run</button>
+        <pre id="output"></pre>
+    </div>
 </head>
 <body>
     <div class="container">
@@ -48,7 +54,7 @@
         <button onclick="runCode()">Run</button>
         <pre id="output"></pre>
     </div>
-
+    
     <script>
         function runCode() {
             var MRT = ['North-South (Red) Line', 'East-West (Green) Line', 'North East (Purple) Line',
@@ -62,7 +68,7 @@
             if (Bus !== 0) {
                 for (var i = 0; i < Bus; i++) {
                     var a = Math.floor(Math.random() * 6) + 1;
-                    output += 'Bus_' + (i + 1) + ': take ' + a + ' station.\n';
+                    output += 'Bus ' + (i + 1) + ': take ' + a + ' station.\n';
                 }
             } else {
                 output += 'No Bus.\n';
